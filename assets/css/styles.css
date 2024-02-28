@@ -1,0 +1,19 @@
+.nav-item{
+    color: black;
+}
+header {
+    background-image: url('/assets/img/photo-1628110341049-37a92fcbcb14.avif');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Set text color to white for better visibility */
+}
+.country-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.country-flag {
+    max-width: 50px;
+}
