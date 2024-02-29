@@ -28,15 +28,25 @@ function displayCountryInfo(countryData) {
         var country = countryData[0];
 
         var html = `
-            <div class="country-card">
-                <h2>${country.name.common}</h2>
-                <img src="${country.flags.png}" alt="Flag" class="country-flag">
-                <p><strong>Capital:</strong> ${country.capital}</p>
-                <p><strong>Population:</strong> ${country.population.toLocaleString()}</p>
-                <p><strong>Region:</strong> ${country.region}</p>
-                <!-- Add more information as needed -->
+        <div class="card ">
+            <img src="${country.flags.png}" class="card-img-top " alt="Flag" style="width: 30%" />
+            <div class="card-body">
+                <h5 class="card-title">${country.name.common}</h5>
+                <h5 class="card-title">${country.name.eesti}</h5>
+                <h5 class="card-title">${country.name.common}</h5>
+                <p class="card-text"><strong>Capital:</strong> ${country.capital}</p>
+                <p class="card-text"><strong>Population:</strong> ${country.population.toLocaleString()}</p>
+                <p class="card-text"><strong>Subregion:</strong> ${country.subregion}</p>
+                <p class="card-text"><strong>Region:</strong> ${country.region}</p>
+                <p class="card-text"><strong>Currency:</strong> ${country.currencies[Object.keys(country.currencies)[0]].name} (${country.currencies[Object.keys(country.currencies)[0]].symbol})</p>
+                <p class="card-text"><strong>Languages:</strong> ${Object.values(country.languages).join(', ')}</p>
             </div>
-        `;
+            <div class="card-body">
+                <a href="${country.maps.googleMaps}" class="card-link" target="_blank">Open Google Maps</a>
+                <a href="${country.maps.openStreetMaps}" class="card-link" target="_blank">Open OpenStreetMaps</a>
+            </div>
+        </div>
+    `;
 
         countryInfoDiv.innerHTML = html;
     } else {

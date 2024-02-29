@@ -1,11 +1,16 @@
+body{
+    background-color: #132a13;
+}
+
 .nav-item{
-    color: black;
+    color: #132a13;
+    font-weight: bolder;
 }
 header {
     background-image: url('/assets/img/photo-1628110341049-37a92fcbcb14.avif');
     background-size: cover;
     background-position: center;
-    color: white; /* Set text color to white for better visibility */
+    color: white; 
 }
 .country-card {
     border: 1px solid #ddd;
@@ -16,4 +21,29 @@ header {
 
 .country-flag {
     max-width: 50px;
+}
+
+.card{
+    background-color: #132a13;
+    color: white;
+    margin: 0 20%;
+    border: 3px double #ddd;
+    padding: 2%;
+}
+
+.footer {
+    background-color: #132a13;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
