@@ -1,16 +1,18 @@
 body{
-    background-color: #132a13;
+    background-color: #0077b6;
+    margin: 0%;
 }
 
+
 .nav-item{
-    color: #132a13;
+    color: #ddd;
     font-weight: bolder;
 }
 header {
-    background-image: url('/assets/img/photo-1628110341049-37a92fcbcb14.avif');
+    background-image: url('/assets/img/17973908.jpg');
     background-size: cover;
     background-position: center;
-    color: white; 
+    color: black; 
 }
 .country-card {
     border: 1px solid #ddd;
@@ -24,15 +26,15 @@ header {
 }
 
 .card{
-    background-color: #132a13;
+    background-color: #0077b6;
     color: white;
-    margin: 0 20%;
-    border: 3px double #ddd;
-    padding: 2%;
+    border-radius: 20px;
+    padding: 4%;
+    border-bottom: 2px solid #ddd;
 }
 
 .footer {
-    background-color: #132a13;
+    background-color: #0077b6;
     color: white;
     padding: 20px 0;
     text-align: center;
