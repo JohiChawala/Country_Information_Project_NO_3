@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Countries by Region</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/Filter_By_Regional.css">
+</head>
+<body>
+<!-- Navbar Section -->
+<nav class="navbar navbar-expand-lg navbar-primary bg-light">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">Country Info</a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Country Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/assets/Pages/Filter_By_Regional.html">Country Region</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/assets/Pages/About.html">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="text-center mb-4"><strong>Filter Countries by Region</strong></h1>
+            <div class="mb-3">
+                <label for="regionDropdown" class="form-label"><strong>Select Region:</strong></label>
+                <select class="form-select" id="regionDropdown" onchange="filterCountriesByRegion()">
+                    <option value=""><b>-- All Regions --</b></option>
+                    <option value="Africa">Africa</option>
+                    <option value="Americas">Americas</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+            </div>
+            <div id="filteredCountries" class="mt-4"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal to display country details -->
+<div class="modal fade" id="countryDetailsModal" tabindex="-1" aria-labelledby="countryDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="countryDetailsModalLabel">Country Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="countryDetailsContent">
+                <!-- Country details content will be inserted here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/assets/js/Filter_By_Regional.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    background-color: #0077b6;
+    margin: 0%;
+}
+
+
+.nav-item{
+    color: #ddd;
+    font-weight: bolder;
+}
+
+.footer {
+    background-color: #0077b6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

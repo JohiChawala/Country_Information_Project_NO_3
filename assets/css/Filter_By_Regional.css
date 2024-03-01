@@ -1,0 +1,22 @@
+body{
+    background-image: url('/assets/img/background.jpg');
+}
+.nav-item{
+    color: #ddd;
+    font-weight: bolder;
+}
+.country-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #0077b6;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.country-card:hover {
+    transform: scale(1.05); 
+}
+.country-flag {
+    max-width: 200px;
+}
