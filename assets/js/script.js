@@ -43,6 +43,7 @@ function displayCountryInfo(countryData) {
                 <p class="card-text"><strong>Capital City:</strong> ${country.capital}</p>
                 <p class="card-text"><strong>Calling Code:</strong> +${country.callingCode}</p>
                 <p class="card-text"><strong>Subregional:</strong> ${country.subregion}</p>
+                <p><strong>Landlocked:</strong> ${country.landlocked ? 'Yes' : 'No'}</p>
                 <p class="card-text"><strong>Timezone:</strong> ${Array.isArray(country.timezones) && country.timezones.length > 0 ? country.timezones.join(', ') : 'N/A'}</p>
                 <p class="card-text"><strong>Area:</strong> ${country.area.toLocaleString()} sq km</p>
                 <p class="card-text"><strong>Population:</strong> ${country.population.toLocaleString()}</p>
